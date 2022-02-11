@@ -3,34 +3,12 @@ package com.tests;
 import com.utils.ComplexTest;
 import com.utils.Step;
 import com.utils.TestDescription;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
+
+import java.io.IOException;
 
 
 public class MyTest extends ComplexTest {
-
-    private static String suiteName = "com.tests.MyTest";
-
-    @BeforeAll
-    public static void init(){
-
-    }
-
-    @TestDescription({
-        @Step(id = 1, description = "Step 1"),
-        @Step(id = 2, description = "Step 2"),
-        @Step(id = 3, description = "Step 3")
-    })
-    @Test
-    public void firstTest() {
-        testStarted();
-        //some complex things
-        markPassed(1);
-        //sorting valuable values
-        markPassed(2);
-        //preparing for success
-        markPassed(3);
-    }
 
     @TestDescription({
         @Step(id = 1, description = "la"),
@@ -40,7 +18,7 @@ public class MyTest extends ComplexTest {
         @Step(id = 5, description = "almost all")
     })
     @Test
-    public void testSomething() {
+    public void testSomething() throws NoSuchMethodException, ClassNotFoundException, IOException {
         testStarted();
         //some complex things
         markPassed(1);
@@ -55,12 +33,22 @@ public class MyTest extends ComplexTest {
         //DONE
     }
 
-    static void testStarted(){
-        testStarted(suiteName, Thread.currentThread().getStackTrace()[2].getMethodName());
+    @TestDescription({
+        @Step(id = 1, description = "connect"),
+        @Step(id = 2, description = "expand"),
+        @Step(id = 3, description = "close connection")
+    })
+    @Test
+    public void anotherTest() throws NoSuchMethodException, ClassNotFoundException, IOException {
+        testStarted();
+        //some complex things
+        markPassed(1);
+        //sorting valuable values
+        markPassed(2);
+        //
+        Assertions.fail();
+        System.out.println("im here");
+        markPassed(3);
+        //DONE
     }
-
-    static void markPassed(int stepId){
-        markPassed(stepId, suiteName, Thread.currentThread().getStackTrace()[2].getMethodName());
-    }
-
 }

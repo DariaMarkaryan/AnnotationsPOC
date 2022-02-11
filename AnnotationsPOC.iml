@@ -23,5 +23,9 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="com.fasterxml.jackson.core:jackson-core:2.6.4" level="project" />
+    <orderEntry type="library" name="com.google.code.gson:gson:2.8.9" level="project" />
+    <orderEntry type="library" name="com.google.guava:guava:18.0" level="project" />
+    <orderEntry type="library" name="commons-io:commons-io:2.8.0" level="project" />
   </component>
 </module>
