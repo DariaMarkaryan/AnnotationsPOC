@@ -1,1 +1,104 @@
-{}
+{
+  "com.tests.MyTest_new": {
+    "testSomething": {
+      "1": [
+        "la",
+        "passed"
+      ],
+      "2": [
+        "la la",
+        "passed"
+      ],
+      "3": [
+        "halo",
+        "passed"
+      ]
+    },
+    "anotherTest": {
+      "1": [
+        "Step1",
+        "passed"
+      ],
+      "2": [
+        "step 2",
+        "passed"
+      ],
+      "3": [
+        "Step 3",
+        "passed"
+      ],
+      "4": [
+        "Step 4",
+        "failed"
+      ],
+      "5": [
+        "done done done",
+        "failed"
+      ]
+    }
+  },
+  "com.tests.MyTests": {
+    "testSomething": {
+      "1": [
+        "la",
+        "passed"
+      ],
+      "2": [
+        "la la",
+        "passed"
+      ],
+      "3": [
+        "halo",
+        "passed"
+      ]
+    },
+    "anotherTest": {
+      "1": [
+        "Step1",
+        "passed"
+      ],
+      "2": [
+        "step 2",
+        "passed"
+      ],
+      "3": [
+        "Step 3",
+        "passed"
+      ],
+      "4": [
+        "Step 4",
+        "failed"
+      ],
+      "5": [
+        "done done done",
+        "failed"
+      ]
+    }
+  },
+  "com.tests.SecondTestSuite": {
+    "connectToDB": {
+      "1": [
+        "Connect to db",
+        "failed"
+      ],
+      "2": [
+        "Disconnecting",
+        "failed"
+      ]
+    },
+    "doImportantThings": {
+      "1": [
+        "Relaxing",
+        "passed"
+      ],
+      "2": [
+        "Working",
+        "passed"
+      ],
+      "3": [
+        "Take a rest",
+        "passed"
+      ]
+    }
+  }
+}
